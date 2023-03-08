@@ -18,6 +18,34 @@ namespace R5T.T0161
         {
         }
     }
+
+
+    /// <summary>
+    /// Simple type name.
+    /// <inheritdoc cref="Documentation.SimpleTypeName" path="/definition"/>
+    /// </summary>
+    [StrongTypeMarker]
+    public class SimpleTypeName : TypedString, IStrongTypeMarker
+    {
+        public SimpleTypeName(string value)
+            : base(value)
+        {
+        }
+    }
+
+
+    /// <summary>
+    /// Fully qualified type name, but prefixed with the type kind marker "T:".
+    /// <inheritdoc cref="Documentation.TypeName" path="/definition"/>
+    /// </summary>
+    [StrongTypeMarker]
+    public class KindMarkedTypeName : TypedString, IStrongTypeMarker
+    {
+        public KindMarkedTypeName(string value)
+            : base(value)
+        {
+        }
+    }
 }
 
 
