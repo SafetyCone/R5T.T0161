@@ -14,6 +14,12 @@ namespace R5T.T0161
             return output;
         }
 
+        public AttributeTypeName ToAttributeTypeName_WithoutValidation(string value)
+        {
+            var output = new AttributeTypeName(value);
+            return output;
+        }
+
         public FullMethodName ToFullMethodName_WithoutValidation(string value)
         {
             var output = new FullMethodName(value);
@@ -41,6 +47,12 @@ namespace R5T.T0161
         public MethodName ToMethodName_WithoutValidation(string value)
         {
             var output = new MethodName(value);
+            return output;
+        }
+
+        public NamespaceName ToNamespaceName_WithoutValidation(string value)
+        {
+            var output = new NamespaceName(value);
             return output;
         }
 

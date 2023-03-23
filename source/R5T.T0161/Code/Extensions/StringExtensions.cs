@@ -11,6 +11,12 @@ namespace R5T.T0161.Extensions
             return output;
         }
 
+        public static AttributeTypeName ToAttributeTypeName(this string value)
+        {
+            var output = StringOperator.Instance.ToAttributeTypeName_WithoutValidation(value);
+            return output;
+        }
+
         public static FullMethodName ToFullMethodName(this string value)
         {
             var output = StringOperator.Instance.ToFullMethodName_WithoutValidation(value);
@@ -38,6 +44,12 @@ namespace R5T.T0161.Extensions
         public static MethodName ToMethodName(this string value)
         {
             var output = StringOperator.Instance.ToMethodName_WithoutValidation(value);
+            return output;
+        }
+
+        public static NamespaceName ToNamespaceName(this string value)
+        {
+            var output = StringOperator.Instance.ToNamespaceName_WithoutValidation(value);
             return output;
         }
 
