@@ -5,25 +5,31 @@ namespace R5T.T0161.Extensions
 {
     public static class StringExtensions
     {
-        public static ArgumentName ToArgumentName(this string value)
+        public static IArgumentName ToArgumentName(this string value)
         {
             var output = StringOperator.Instance.ToArgumentName(value);
             return output;
         }
 
-        public static AttributeTypeName ToAttributeTypeName(this string value)
+        public static IAttributeTypeName ToAttributeTypeName(this string value)
         {
             var output = StringOperator.Instance.ToAttributeTypeName(value);
             return output;
         }
 
-        public static FullMethodName ToFullMethodName(this string value)
+        public static IClassTypeName ToClassTypeName(this string value)
+        {
+            var output = StringOperator.Instance.ToClassTypeName(value);
+            return output;
+        }
+
+        public static IFullMethodName ToFullMethodName(this string value)
         {
             var output = StringOperator.Instance.ToFullMethodName(value);
             return output;
         }
 
-        public static FullPropertyName ToFullPropertyName(this string value)
+        public static IFullPropertyName ToFullPropertyName(this string value)
         {
             var output = StringOperator.Instance.ToFullPropertyName(value);
             return output;
@@ -35,109 +41,128 @@ namespace R5T.T0161.Extensions
             return output;
         }
 
-        public static KindMarkedFullPropertyName ToKindMarkedFullPropertyName(this string value)
+        public static IInterfaceTypeName ToInterfaceTypeName(this string value)
+        {
+            var output = StringOperator.Instance.ToInterfaceTypeName(value);
+            return output;
+        }
+
+        public static IKindMarkedFullPropertyName ToKindMarkedFullPropertyName(this string value)
         {
             var output = StringOperator.Instance.ToKindMarkedFullPropertyName(value);
             return output;
         }
 
-        public static KindMarkedFullMemberName ToKindMarkedFullMemberName(this string value)
+        public static IKindMarkedFullMemberName ToKindMarkedFullMemberName(this string value)
         {
             var output = StringOperator.Instance.ToKindMarkedFullMemberName(value);
             return output;
         }
 
-        public static KindMarkedFullMethodName ToKindMarkedFullMethodName(this string value)
+        public static IKindMarkedFullMethodName ToKindMarkedFullMethodName(this string value)
         {
             var output = StringOperator.Instance.ToKindMarkedFullMethodName(value);
             return output;
         }
 
-        public static MethodName ToMethodName(this string value)
+        public static IMethodName ToMethodName(this string value)
         {
             var output = StringOperator.Instance.ToMethodName(value);
             return output;
         }
 
-        public static NamespaceName ToNamespaceName(this string value)
+        public static INamespaceName ToNamespaceName(this string value)
         {
             var output = StringOperator.Instance.ToNamespaceName(value);
             return output;
         }
 
-        public static NamespacedTypedParameterizedMethodName ToNamespacedTypedParameterizedMethodName(this string value)
+        public static INamespacedTypedParameterizedMethodName ToNamespacedTypedParameterizedMethodName(this string value)
         {
             var output = StringOperator.Instance.ToNamespacedTypedParameterizedMethodName(value);
             return output;
         }
 
-        public static NamespacedTypeName ToNamespacedTypeName(this string value)
+        public static INamespacedTypeName ToNamespacedTypeName(this string value)
         {
             var output = StringOperator.Instance.ToNamespacedTypeName(value);
             return output;
         }
 
-        public static NamespacedTypedMethodName ToNamespacedTypedMethodName(this string value)
+        public static INamespacedTypedMethodName ToNamespacedTypedMethodName(this string value)
         {
             var output = StringOperator.Instance.ToNamespacedTypedMethodName(value);
             return output;
         }
 
-        public static NamespacedTypedPropertyName ToNamespacedTypedPropertyName(this string value)
+        public static INamespacedTypedPropertyName ToNamespacedTypedPropertyName(this string value)
         {
             var output = StringOperator.Instance.ToNamespacedTypedPropertyName(value);
             return output;
         }
 
-        public static OutputTypeName ToOutputTypeName(this string value)
+        public static IOutputTypeName ToOutputTypeName(this string value)
         {
             var output = StringOperator.Instance.ToOutputTypeName(value);
             return output;
         }
 
-        public static ParameterList ToParameterList(this string value)
+        public static IOutputTypeNamed ToOutputTypeNamed(this string value)
+        {
+            var output = StringOperator.Instance.ToOutputTypeNamed(value);
+            return output;
+        }
+
+        public static IParameterList ToParameterList(this string value)
         {
             var output = StringOperator.Instance.ToParameterList(value);
             return output;
         }
 
-        public static Parameter ToParameter(this string value)
+        public static IParameter ToParameter(this string value)
         {
             var output = StringOperator.Instance.ToParameter(value);
             return output;
         }
 
-        public static SimplestMethodName ToSimplestMethodName(this string value)
+        public static ISimplestMethodName ToSimplestMethodName(this string value)
         {
             var output = StringOperator.Instance.ToSimplestMethodName(value);
             return output;
         }
 
-        public static SimpleMethodName ToSimpleMethodName(this string value)
+        public static ISimpleMethodName ToSimpleMethodName(this string value)
         {
             var output = StringOperator.Instance.ToSimpleMethodName(value);
             return output;
         }
 
-        public static SimplePropertyName ToSimplePropertyName(this string value)
+        public static ISimplePropertyName ToSimplePropertyName(this string value)
         {
             var output = StringOperator.Instance.ToSimplePropertyName(value);
             return output;
         }
 
-        public static SimpleTypeName ToSimpleTypeName(this string value)
+        /// <inheritdoc cref="IStringOperator.ToSimpleTypeName(string)"/>
+        public static ISimpleTypeName ToSimpleTypeName(this string value)
         {
             var output = StringOperator.Instance.ToSimpleTypeName(value);
             return output;
         }
 
-        public static TypeName ToTypeName(this string value)
+        public static ITypeName ToTypeName(this string value)
         {
             var output = StringOperator.Instance.ToTypeName(value);
             return output;
         }
 
-        public static TypeNamedMethodName ToTypeNamedMethodName(this string value)
+        public static ITypeNameStem ToTypeNameStem(this string value)
+        {
+            var output = StringOperator.Instance.ToTypeNameStem(value);
+            return output;
+        }
+
+        public static ITypeNamedMethodName ToTypeNamedMethodName(this string value)
         {
             var output = StringOperator.Instance.ToTypeNamedMethodName(value);
             return output;

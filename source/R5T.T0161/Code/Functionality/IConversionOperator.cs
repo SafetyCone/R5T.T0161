@@ -9,7 +9,7 @@ namespace R5T.T0161
     [FunctionalityMarker]
     public partial interface IConversionOperator : IFunctionalityMarker
     {
-        public KindMarkedFullPropertyName AsKindMarkedFullPropertyName(IKindMarkedFullMemberName kindMarkedFullMemberName)
+        public IKindMarkedFullPropertyName AsKindMarkedFullPropertyName(IKindMarkedFullMemberName kindMarkedFullMemberName)
         {
             var output = kindMarkedFullMemberName.As(Instances.Constructors.KindMarkedFullPropertyName);
             return output;

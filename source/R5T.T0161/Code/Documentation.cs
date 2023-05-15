@@ -35,5 +35,12 @@ namespace R5T.T0161
 		/// <definition>The type name of a type is its fully-qualified type name, including its namespace but not its assembly.</definition>
 		/// <name><i>type name</i></name>
 		public static readonly object TypeName;
+
+        /// <summary>
+        /// <inheritdoc cref="TypeNameStem" path="/definition"/>
+        /// </summary>
+        /// <definition>The stem of a type name (without any type prefixes or suffixes, like "I-" for interfaces).</definition>
+        /// <name><i>type name stem</i></name>
+        public static readonly object TypeNameStem;
 	}
-}
+}   

@@ -8,139 +8,164 @@ namespace R5T.T0161
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
     {
-        public ArgumentName ToArgumentName(string value)
+        public IArgumentName ToArgumentName(string value)
         {
             var output = new ArgumentName(value);
             return output;
         }
 
-        public AttributeTypeName ToAttributeTypeName(string value)
+        public IAttributeTypeName ToAttributeTypeName(string value)
         {
             var output = new AttributeTypeName(value);
             return output;
         }
 
-        public FullMethodName ToFullMethodName(string value)
+        public IClassTypeName ToClassTypeName(string value)
+        {
+            var output = new ClassTypeName(value);
+            return output;
+        }
+
+        public IFullMethodName ToFullMethodName(string value)
         {
             var output = new FullMethodName(value);
             return output;
         }
 
-        public FullPropertyName ToFullPropertyName(string value)
+        public IFullPropertyName ToFullPropertyName(string value)
         {
             var output = new FullPropertyName(value);
             return output;
         }
 
-        public GenericTypeArgumentName ToGenericTypeArgumentName(string value)
+        public IGenericTypeArgumentName ToGenericTypeArgumentName(string value)
         {
             var output = new GenericTypeArgumentName(value);
             return output;
         }
 
-        public KindMarkedFullPropertyName ToKindMarkedFullPropertyName(string value)
+        public IInterfaceTypeName ToInterfaceTypeName(string value)
+        {
+            var output = new InterfaceTypeName(value);
+            return output;
+        }
+
+        public IKindMarkedFullPropertyName ToKindMarkedFullPropertyName(string value)
         {
             var output = new KindMarkedFullPropertyName(value);
             return output;
         }
 
-        public KindMarkedFullMemberName ToKindMarkedFullMemberName(string value)
+        public IKindMarkedFullMemberName ToKindMarkedFullMemberName(string value)
         {
             var output = new KindMarkedFullMemberName(value);
             return output;
         }
 
-        public KindMarkedFullMethodName ToKindMarkedFullMethodName(string value)
+        public IKindMarkedFullMethodName ToKindMarkedFullMethodName(string value)
         {
             var output = new KindMarkedFullMethodName(value);
             return output;
         }
 
-        public MethodName ToMethodName(string value)
+        public IMethodName ToMethodName(string value)
         {
             var output = new MethodName(value);
             return output;
         }
 
-        public NamespaceName ToNamespaceName(string value)
+        public INamespaceName ToNamespaceName(string value)
         {
             var output = new NamespaceName(value);
             return output;
         }
 
-        public NamespacedTypedMethodName ToNamespacedTypedMethodName(string value)
+        public INamespacedTypedMethodName ToNamespacedTypedMethodName(string value)
         {
             var output = new NamespacedTypedMethodName(value);
             return output;
         }
 
-        public NamespacedTypedPropertyName ToNamespacedTypedPropertyName(string value)
+        public INamespacedTypedPropertyName ToNamespacedTypedPropertyName(string value)
         {
             var output = new NamespacedTypedPropertyName(value);
             return output;
         }
 
-        public NamespacedTypedParameterizedMethodName ToNamespacedTypedParameterizedMethodName(string value)
+        public INamespacedTypedParameterizedMethodName ToNamespacedTypedParameterizedMethodName(string value)
         {
             var output = new NamespacedTypedParameterizedMethodName(value);
             return output;
         }
 
-        public NamespacedTypeName ToNamespacedTypeName(string value)
+        public INamespacedTypeName ToNamespacedTypeName(string value)
         {
             var output = new NamespacedTypeName(value);
             return output;
         }
 
-        public OutputTypeName ToOutputTypeName(string value)
+        public IOutputTypeName ToOutputTypeName(string value)
         {
             var output = new OutputTypeName(value);
             return output;
         }
 
-        public ParameterList ToParameterList(string value)
+        public IOutputTypeNamed ToOutputTypeNamed(string value)
+        {
+            var output = new OutputTypeNamed(value);
+            return output;
+        }
+
+        public IParameterList ToParameterList(string value)
         {
             var output = new ParameterList(value);
             return output;
         }
 
-        public Parameter ToParameter(string value)
+        public IParameter ToParameter(string value)
         {
             var output = new Parameter(value);
             return output;
         }
 
-        public SimplestMethodName ToSimplestMethodName(string value)
+        public ISimplestMethodName ToSimplestMethodName(string value)
         {
             var output = new SimplestMethodName(value);
             return output;
         }
 
-        public SimplePropertyName ToSimplePropertyName(string value)
+        public ISimplePropertyName ToSimplePropertyName(string value)
         {
             var output = new SimplePropertyName(value);
             return output;
         }
 
-        public SimpleMethodName ToSimpleMethodName(string value)
+        public ISimpleMethodName ToSimpleMethodName(string value)
         {
             var output = new SimpleMethodName(value);
             return output;
         }
 
-        public SimpleTypeName ToSimpleTypeName(string value)
+        /// <inheritdoc cref="ISimpleTypeName"/>
+        public ISimpleTypeName ToSimpleTypeName(string value)
         {
             var output = new SimpleTypeName(value);
             return output;
         }
 
-        public TypeName ToTypeName(string value)
+        public ITypeName ToTypeName(string value)
         {
             var output = new TypeName(value);
             return output;
         }
 
-        public TypeNamedMethodName ToTypeNamedMethodName(string value)
+        public ITypeNameStem ToTypeNameStem(string value)
+        {
+            var output = new TypeNameStem(value);
+            return output;
+        }
+
+        public ITypeNamedMethodName ToTypeNamedMethodName(string value)
         {
             var output = new TypeNamedMethodName(value);
             return output;
