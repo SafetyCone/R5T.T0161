@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using R5T.T0132;
 
@@ -162,6 +164,15 @@ namespace R5T.T0161
         public ITypeNameStem ToTypeNameStem(string value)
         {
             var output = new TypeNameStem(value);
+            return output;
+        }
+
+        public IEnumerable<ITypeNameStem> ToTypeNameStems(IEnumerable<string> values)
+        {
+            var output = values
+                .Select(this.ToTypeNameStem)
+                ;
+
             return output;
         }
 
