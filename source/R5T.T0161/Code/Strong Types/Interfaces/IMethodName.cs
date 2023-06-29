@@ -10,6 +10,7 @@ namespace R5T.T0161
     /// <para>
     /// <inheritdoc cref="ISimpleMethodName" path="/summary"/>
     /// </para>
+    /// <para>Example: ToString, or ContainsKey&lt;TKey&gt;</para>
     /// </summary>
     [StrongTypeMarker]
     public interface IMethodName : IStrongTypeMarker,

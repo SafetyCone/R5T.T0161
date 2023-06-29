@@ -9,6 +9,7 @@ namespace R5T.T0161
     /// <summary>
     /// Indicates the underlying value is a simplest method name.
     /// Simplest method names are just the name of the method, and are <strong>not</strong> <see cref="ITypeParameterized"/> like <see cref="ISimpleMethodNamed"/>s.
+    /// <para>Examples: ToString, ContainsKey</para>
     /// </summary>
     [StrongTypeMarker]
     public interface ISimplestMethodName : IStrongTypeMarker,
