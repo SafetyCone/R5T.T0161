@@ -10,7 +10,8 @@ namespace R5T.T0161
     /// The type name of an attribute.
     /// </summary>
     [StrongTypeMarker]
-    public interface IAttributeTypeName : ITyped<string>, IStrongTypeMarker
+    public interface IAttributeTypeName : IStrongTypeMarker,
+        ITyped<string>
     {
 
     }
